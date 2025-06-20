@@ -10,6 +10,7 @@ const Input = ({
     value,
     onChange,
     error,
+    className,
 }: InputProps) =>{
 
     return (
@@ -24,6 +25,7 @@ const Input = ({
                 value={value}
                 onChange={onChange}
                 required
+                className={className}
             />
             {error && <p>{error}</p> } {/* Local para exibir erro*/}
         </>
