@@ -3,22 +3,47 @@ import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
 import { imagens } from '../../assets/img';
 import './Login.css';
+import { useState } from "react";
 
 const Login = () => {
+
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
+    const [error, setError] = useState("");
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (!email || !senha) {
+        setError("Preencha todos os campos.");
+        return;
+        }
+
+        if (email !== "usuario@email.com" || senha !== "123456") {
+        setError("Ops! Seu e-mail ou senha estão incorretos."); //esse email e senha são so pra testar se o erro ta aparecendo
+        return;
+        }
+
+        setError(""); 
+        alert("Login realizado com sucesso!");
+        
+    };
     return (
 
         <div className="login-container">
             <div className="login-box">
                 <img src={imagens.mascote} alt="Mascote reciclável" className="mascote" />
 
-                <form className="login-form">
+                <form className="login-form" onSubmit={handleSubmit}>
                     <Input
                         name="usuario"
                         id="usuario"
                         label=""
                         placeholder="Digite seu e-mail aqui"
                         type="text"
-                        className="input-email"
+                        className= {`input-email ${error ? "input-error" : ""}`}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
     
                         
                     />
@@ -29,9 +54,13 @@ const Login = () => {
                         label=""
                         placeholder="Senha"
                         type="password"
-                        className="input-senha"
+                        className={`input-senha ${error ? "input-error" : ""}`}
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
                       
                     />
+
+                     {error && <p className="error-message">{error}</p>}
 
                     <div className="esqueci-senha">
                         <a href="#">Esqueceu a senha?</a>

@@ -129,3 +129,19 @@ body {
   height: 32px;
   cursor: pointer;
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.input-error {
+  border: 1px solid red !important;
+  background-image: url('../../assets/img/image-erro.png'); 
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px 20px;
+}
+
+
