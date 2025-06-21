@@ -1,16 +1,15 @@
 import { Link } from 'react-router-dom';
 import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
+import { imagens } from '../../assets/img';
 import './Login.css';
 
 const Login = () => {
     return (
 
         <div className="login-container">
-            <img src="/imagem-topo.png" className="top-image" />
-
             <div className="login-box">
-                <img src="/mascote.png" alt="Mascote reciclável" className="mascote" />
+                <img src={imagens.mascote} alt="Mascote reciclável" className="mascote" />
 
                 <form className="login-form">
                     <Input
@@ -48,9 +47,9 @@ const Login = () => {
                 <div className="divider">ou</div>
 
                 <div className="social-icons">
-                    <img src="/google-icon.png" alt="Google" />
-                    <img src="/facebook-icon.png" alt="Facebook" />
-                    <img src="/instagram-icon.png" alt="Instagram" />
+                    <img src={imagens.iconeGoogle} alt="Google" />
+                    <img src={imagens.iconeFacebook} alt="Facebook" />
+                    <img src={imagens.iconeInstagram} alt="Instagram" />
                 </div>
             </div>
         </div>

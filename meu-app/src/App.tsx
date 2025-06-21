@@ -1,16 +1,25 @@
-import { Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Login from './pages/Login/Login'
+import Header from './components/Header/Header'
+import Instrucoes from './pages/Instrucoes/Intrucoes'
+import NossoApp  from './pages/NossoApp/NossoApp'
+import Jogo  from './pages/Jogo/Jogo'
 import Cadastro from './pages/Cadastro/Cadastro'
-import './App.css'
 
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
-      </Routes>
-    </div>
+      <>
+        <Header/>
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/instrucoes" element={<Instrucoes />} />
+            <Route path="/app" element={<NossoApp />} />
+            <Route path="/jogo" element={<Jogo />} />
+            
+          </Routes>  
+      </>
+      
   )
 }
 

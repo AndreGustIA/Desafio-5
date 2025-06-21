@@ -1,58 +1,78 @@
+import { Link } from 'react-router-dom';
+import { imagens } from "../../assets/img";
 import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
 
+import './Cadastro.css'
 
 const Cadastro = () => {
     return (
-        <form action="">
-            <div>
-                <Input
-                    name="nome"
-                    id="nome"
-                    label="Nome"
-                    placeholder="Informe seu nome"
-                    type="text"
-                />
-            </div>
-            <div>
-                <Input
-                    name="email"
-                    id="email"
-                    label="E-mail"
-                    placeholder="Informe seu e-mail"
-                    type="email"
-                />
-            </div>
-            <div>
-                <Input
-                    name="nomeusuario"
-                    id="nomeusuario"
-                    label="Nome Usuário"
-                    placeholder="exe: user123"
-                    type="text"
-                />
-            </div>
-            <div>
-                <Input
-                    name="senha"
-                    id="senha"
-                    label="Senha"
-                    placeholder="Crie uma senha"
-                />
-            </div>
-            <div>
-                <Input
-                    name="confirmarsenha"
-                    id="confirmarsenha"
-                    label="Confirmar"
-                    placeholder="Confirme sua senha"
-                />
-            </div>
+        <>
+            <div className="container">
+                <img src={imagens.mascote} className="iconeMascote" alt="Mascote" />
 
-            <Botao type="submit">
-                {"Cadastrar"}
-            </Botao>
-        </form>
+                <form className="formulario" action="">
+                    <div>
+                        <Input
+                            name="nome"
+                            id="nome"
+                            label=""
+                            placeholder="Nome"
+                            type="text"
+                            className="input"
+                        />
+                    </div>
+                    <div>
+                        <Input
+                            name="sobrenome"
+                            id="sobrenome"
+                            label=""
+                            placeholder="Sobrenome"
+                            type="text"
+                            className="input"
+                        />
+                    </div>
+                    <div>
+                        <Input
+                            name="nomeusuario"
+                            id="nomeusuario"
+                            label=""
+                            placeholder="Digite seu e-mail aqui"
+                            type="email"
+                            className="input"
+                        />
+                    </div>
+                    <div>
+                        <Input
+                            name="senha"
+                            id="senha"
+                            label=""
+                            placeholder="Senha"
+                            className="input"
+                        />
+                    </div>
+                    <div>
+                        <Input
+                            name="confirmarsenha"
+                            id="confirmarsenha"
+                            label=""
+                            placeholder="Confirme sua senha"
+                            className="input"
+                        />
+                    </div>
+                    
+                    <Botao type="submit" className="botao">
+                        {"Cadastra-se "}
+                    </Botao>
+
+                    <p className="conta">Já tem uma conta?
+                        <Link to="/">
+                            <span className='span-entrar'> Entrar</span>
+                        </Link>
+                    </p>
+                </form>
+            </div>
+        </>      
     )
 }
 
