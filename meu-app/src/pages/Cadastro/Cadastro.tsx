@@ -62,7 +62,7 @@ const Cadastro = () => {
                     </div>
                     
                     <Botao type="submit" className="botao">
-                        {"Cadastra-se "}
+                        {"Cadastre-se "}
                     </Botao>
 
                     <p className="conta">Já tem uma conta?
