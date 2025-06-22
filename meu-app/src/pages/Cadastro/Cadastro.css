@@ -64,3 +64,25 @@
     color: #00AF32;
     font-family: 'Inter', sans-serif;
 }
+
+.mensagem-erro {
+    color: red;
+    font-size: 12px;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+}
+.input.erro {
+    border: 1px solid red !important;
+    background-image: url('../../assets/img/image-erro.png'); 
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px 20px;
+}
+
+.mensagem-sucesso {
+    color: green;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}

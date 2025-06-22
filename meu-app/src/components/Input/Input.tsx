@@ -24,7 +24,7 @@ const Input = ({
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                required
+                /*required*/
                 className={className}
             />
             {error && <p>{error}</p> } {/* Local para exibir erro*/}
