@@ -1,22 +1,10 @@
-import React from 'react';
 import './Instrucoes.css'; 
 import { imagens } from '../../assets/img';     
 
 const Instrucoes = () => {
     return (
         <>
-          <header className="cabecalho">
-            <nav className="navegacao">
-              <ul className="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="instrucoes.html">Instruções</a></li>
-                <li><a href="conhecapp.html">Conheça nosso app</a></li>
-                <li><a href="jogo.html">Jogo</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </nav>
-          </header>
-    
+         
           <main className="conteudo-principal">
             <div className="imagem">
             <img src={imagens.imgInst} alt="Imagem" className="imagem-inst" />

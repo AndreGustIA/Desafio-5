@@ -1,4 +1,3 @@
-import React from 'react';
 import './Jogo.css'; 
 import { imagens } from '../../assets/img';
 
@@ -8,19 +7,7 @@ const Jogo = () => {
       };
 
     return (
-        <div className="page-container">
-          <header className="cabecalho">
-            <nav className="navegacao">
-              <ul className="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="instrucoes.html">Instruções</a></li>
-                <li><a href="conhecapp.html">Conheça nosso app</a></li>
-                <li><a href="jogo.html">Jogo</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </nav>
-          </header>
-    
+        
           <main className="conteudo-principal">
             <div className="imagem">
             <img src={imagens.imgJogo} alt="Imagem" className="imagem-jogo" />
@@ -38,7 +25,7 @@ const Jogo = () => {
               <b>COMEÇAR</b>
             </button>
           </main>
-        </div>
+
       );
     };
     

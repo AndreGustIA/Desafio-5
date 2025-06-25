@@ -5,7 +5,8 @@ import instagramIcone from './instagram-icon.png';
 import facebookIcone from './facebook-icon.png';
 import imgnossoApp from './imagem-nossoapp.png';
 import imgJogo from './imagem-jogo.png';
-import imgInst from './imagem-inst';
+import imgInst from './imagem-inst.png';
+import logoRecicla from './logo-recicla.png';
 
 export const imagens = {
     mascote: mascote,
@@ -16,4 +17,5 @@ export const imagens = {
     imgnossoApp: imgnossoApp,
     imgJogo: imgJogo,
     imgInst: imgInst,
+    logoRecicla: logoRecicla,
 };
