@@ -1,22 +1,31 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Login from './pages/Login/Login'
-import Header from './components/Header/Header'
-import Instrucoes from './pages/Instrucoes/Intrucoes'
-import NossoApp  from './pages/NossoApp/NossoApp'
+import CoresDeColeta from './pages/CoresDeColeta/CoresDeColeta'
+import PorQueFazer  from './pages/PorQueFazer/PorQueFazer'
 import Jogo  from './pages/Jogo/Jogo'
 import Cadastro from './pages/Cadastro/Cadastro'
+import Inicio from './pages/Inicio/Inicio'
+import LayoutHeader from './components/Header/LayoutHeader'
+import ColetaSeletiva from './pages/ColetaSeletiva/ColetaSeletiva';
+import SepararLixo from './pages/Lixo/Lixo';
 
 function App() {
   return (
       <>
-        <Header/>
           <Routes>
-            <Route path="/login" element={<Login />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/instrucoes" element={<Instrucoes />} />
-            <Route path="/app" element={<NossoApp />} />
-            <Route path="/jogo" element={<Jogo />} />
+            <Route path="/" element={<Navigate to="/inicio" />} />
             
+            <Route path='/inicio' element={<Inicio />}></Route>
+
+            <Route element={<LayoutHeader/>}>
+              <Route path='/coletaSeletiva' element={<ColetaSeletiva />}/>
+              <Route path='/PorQueFazer' element={<PorQueFazer />}/>
+              <Route path="//CoresDeColeta" element={<CoresDeColeta />} />
+              <Route path="/separarlixo" element={<SepararLixo />} />
+              <Route path="/jogo" element={<Jogo />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/cadastro" element={<Cadastro />} />
+            </Route>
           </Routes>  
       </>
       

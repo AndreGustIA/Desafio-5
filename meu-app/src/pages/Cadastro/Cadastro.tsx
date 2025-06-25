@@ -148,7 +148,7 @@ const Cadastro = () => {
                     </Botao>
 
                     <p className="conta">Já tem uma conta?
-                        <Link to="/">
+                        <Link to="/login">
                             <span className='span-entrar'> Entrar</span>
                         </Link>
                     </p>

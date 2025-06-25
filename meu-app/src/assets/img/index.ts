@@ -6,7 +6,7 @@ import facebookIcone from './facebook-icon.png';
 import imgnossoApp from './imagem-nossoapp.png';
 import imgJogo from './imagem-jogo.png';
 import imgInst from './imagem-inst.png';
-import logoRecicla from './logo-recicla.png';
+import logoRecicla from './recicla-maranhao.png';
 
 export const imagens = {
     mascote: mascote,

@@ -5,10 +5,11 @@ const Header = () => {
     return (
         <header className={styleHeader.containerHeader}>
             <nav>
-                <Link to='/inicio'>Início</Link>
-                <Link to='/instrucoes'>Instruções</Link>
-                <Link to='/app'>Conheça o nosso app</Link>
-                <Link to='/jogo'>Jogo</Link>
+                <Link to='/coletaSeletiva'>O que é coleta seletiva</Link>
+                <Link to='/PorQueFazer'>Por que fazer?</Link>
+                <Link to='/CoresDeColeta'>As cores de coleta seletiva</Link>
+                <Link to='/separarlixo'>Como separar o lixo em casa?</Link>
+                <Link to='/jogo'>Comece agora!</Link>
                 <Link to='/login' className={styleHeader.perfilLogin}>Login</Link> 
                 
             </nav>
