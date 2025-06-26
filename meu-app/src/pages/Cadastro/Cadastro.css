@@ -11,10 +11,12 @@
 }
 
 .iconeMascote {
-    width: 154px;
-    height: 126px;
-    margin-bottom: 9px;
+  width: 369px;
+  height: 146px;
+  margin-bottom: 24px;
+  margin-top: 20px;
 }
+
 
 .formulario {
     display: flex;
@@ -53,6 +55,8 @@
     color: #7E7E7E;
     margin-bottom: 66px;
     font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .conta a {

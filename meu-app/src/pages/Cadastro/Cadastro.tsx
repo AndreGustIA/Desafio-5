@@ -70,7 +70,7 @@ const Cadastro = () => {
     return (
         <>
             <div className="container">
-                <img src={imagens.mascote} className="iconeMascote" alt="Mascote" />
+                <img src={imagens.mascote2} className="iconeMascote" alt="Mascote" />
 
                 <form className="formulario" onSubmit={handleSubmit}>
                     <div>

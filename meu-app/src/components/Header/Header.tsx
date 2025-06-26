@@ -1,23 +1,36 @@
 import styleHeader from './Header.module.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
         <header className={styleHeader.containerHeader}>
             <nav>
-                <Link to='/coletaSeletiva'>O que é coleta seletiva</Link>
-                <Link to='/PorQueFazer'>Por que fazer?</Link>
-                <Link to='/CoresDeColeta'>As cores de coleta seletiva</Link>
-                <Link to='/separarlixo'>Como separar o lixo em casa?</Link>
-                <Link to='/jogo'>Comece agora!</Link>
-                <Link to='/login' className={styleHeader.perfilLogin}>Login</Link> 
+                <NavLink to='/coletaSeletiva' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    O que é coleta seletiva
+                </NavLink>
+                <NavLink to='/PorQueFazer' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    Por que fazer?
+                </NavLink>
+                <NavLink to='/CoresDeColeta' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    As cores de coleta seletiva
+                </NavLink>
+                <NavLink to='/separarlixo' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    Como separar o lixo em casa?
+                </NavLink>
+                <NavLink to='/jogo' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    Nosso jogo
+                </NavLink>
+                <NavLink to='/login' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    Login
+                </NavLink>
+                <NavLink to='/dashboard' className={({ isActive }) => isActive ? styleHeader.active : undefined}>
+                    Dashboard
+                </NavLink>
                 
             </nav>
             
         </header>  
 
-        //tava tentando adicionar aquela parte de login do figma mas não consigo
-        //tentei criar um className so pro Login e não deu
           
     )
 }

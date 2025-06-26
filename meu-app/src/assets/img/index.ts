@@ -1,5 +1,6 @@
 import imagemTopo from './imagem-topo.png';
 import mascote from './mascote.png';
+import mascote2 from './mascote2.png';
 import googleIcone from './google-icon.png';
 import instagramIcone from './instagram-icon.png';
 import facebookIcone from './facebook-icon.png';
@@ -10,9 +11,11 @@ import imagem4 from './imagem4.png';
 import imagem5 from './imagem5.png';
 import imagem6 from './imagem6.png';
 import logoRecicla from './recicla-maranhao.png';
+import dashimg from './dash-img.png';
 
 export const imagens = {
     mascote: mascote,
+    mascote2: mascote2,
     imagemTopo: imagemTopo,
     iconeGoogle: googleIcone,
     iconeInstagram: instagramIcone,
@@ -24,4 +27,5 @@ export const imagens = {
     imagem5: imagem5,
     imagem6: imagem6,
     logoRecicla: logoRecicla,
+    dashimg: dashimg,
 };

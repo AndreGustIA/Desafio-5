@@ -8,6 +8,8 @@ import Inicio from './pages/Inicio/Inicio'
 import LayoutHeader from './components/Header/LayoutHeader'
 import ColetaSeletiva from './pages/ColetaSeletiva/ColetaSeletiva';
 import SepararLixo from './pages/Lixo/Lixo';
+import Dashboard from './pages/Dashboard/dashboard';
+
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
               <Route path="/jogo" element={<Jogo />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/dashboard" element={<Dashboard />} />
             </Route>
           </Routes>  
       </>

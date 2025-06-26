@@ -41,9 +41,10 @@ body {
 }
 
 .mascote {
-  width: 154px;
-  height: 126px;
+  width: 460px;
+  height: 151px;
   margin-bottom: 24px;
+  margin-top: 20px;
 }
 
 .input-email {

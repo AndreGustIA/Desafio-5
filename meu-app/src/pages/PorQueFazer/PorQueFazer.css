@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap');
+
 body {
   margin: 0;
   padding: 40px 20px;
@@ -11,15 +13,17 @@ body {
   margin: 0 auto;
 }
 
-.illustration img {
+.illustration {
   width: 300px;
   max-width: 100%;
+  margin-top: 1px;
 }
 
 h2 {
   color: #006400;
   font-size: 24px;
   margin-top: 24px;
+  font-family: 'Inter', sans-serif; 
   font-weight: 700;
 }
 
@@ -44,4 +48,6 @@ h2 {
 
 .beneficios li {
   margin-bottom: 30px;
+  font-family: 'Inter', sans-serif; 
+  font-weight: 300;
 }

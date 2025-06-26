@@ -14,7 +14,7 @@ const Inicio = () => {
             <img src={imagens.logoRecicla} alt="Imagem" className="imagem-inst" />
             </div>
 
-            <Botao className={sytleInicio.botaoaAcessarPagina} onClick={() => navegarPagina('/coletaSeletiva')}>
+            <Botao className={sytleInicio.botaoaAcessarPagina} onClick={() => navegarPagina('/ColetaSeletiva')}>
               {'Acessar Página'}
             </Botao>
             
