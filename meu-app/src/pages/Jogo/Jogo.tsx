@@ -10,7 +10,7 @@ const Jogo = () => {
         
           <main className="conteudo-principal">
             <div className="imagem">
-            <img src={imagens.imgJogo} alt="Imagem" className="imagem-jogo" />
+            <img src={imagens.imagem6} alt="Imagem" className="imagem6" />
               
             </div>
             

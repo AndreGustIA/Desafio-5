@@ -1,60 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
-  }
-  
-  body {
-    background-color: #f8f9fa;
-  }
-  
-  
-  .cabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 2rem;
-  }
-  
-  .menu {
-    display: flex;
-    list-style: none;
-    gap: 7rem;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: rgb(94, 93, 93);
-    font-weight: 200;
-    font-size: 1.4rem;
-  }
-  
-  
-  .imagem {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto 2rem;
-  }
-  
-  
-  .conteudo-principal {
-    text-align: center;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .titulo {
-    font-size: 2.5rem;
-    color: rgb(1, 90, 1);
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-  }
-  
-  .descricao {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    color: rgb(21, 110, 21);
-  }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #006400;
+  font-size: 29px !important;
+  margin-bottom: 1rem;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.descricao {
+  color: #006400;
+  margin-top: 2rem;
+  font-size: 24px !important;
+  font-weight: 10px !important;
+}

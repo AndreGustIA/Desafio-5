@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .image-wrapper img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .title {
+    color: #006400;
+    font-size: 24px;
+    margin: 2rem 0 1.5rem;
+  }
+  
+ .lista {
+    list-style-type: disc;
+    color: #006400;
+    font-size: 24px;
+    max-width: 550px;
+    margin: 30px auto 0;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
