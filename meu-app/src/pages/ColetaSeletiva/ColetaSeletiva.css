@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap');
+@import url('../../assets/styles/variables.css');
 
 .container {
     font-family: Arial, sans-serif;
     padding: 40px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--cor-primaria);
   }
   
   .illustration img {
@@ -17,8 +17,8 @@
     color: #006400;
     font-size: 2rem;
     margin-top: 24px;
-    font-family: 'Inter', sans-serif; 
-    font-weight: 700;
+    font-family: var(--font-Inter); 
+    font-weight: var(--font-weight-bold);
   }
   
   p {
@@ -28,6 +28,6 @@
     max-width: 600px;
     margin: 16px auto 32px;
     line-height: 1.5;
-    font-family: 'Inter', sans-serif; 
+    font-family: var(--font-Inter); 
     font-weight: 300;
   }

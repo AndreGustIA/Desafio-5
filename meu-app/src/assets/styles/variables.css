@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap');
+
 :root{
     --cor-primaria: #FFFFFF;
-    --cor-secundaria: #4CB236;  
+    --cor-secundaria: #4CAF50;
+    
+    /* Cores de texto */
+    --txt-preto: #000000;
+    --txt-cinza: #4F4F4F;
+    --txt-branco: #FFFFFF;
+
+    /* Cores de linhas (inputs) */
+    --linha-cor-cinza: #E0E0E0;
+    --linha-cor-verde: #4CAF50;
+    --cor-vermelho: #E53935;
+    --cor-verde-claro: #A5D6A7;
      
+    --font-poppins: 'Poppins', sans-serif;
+    --font-Inter: 'Inter', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
 }

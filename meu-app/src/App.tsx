@@ -9,6 +9,8 @@ import LayoutHeader from './components/Header/LayoutHeader'
 import ColetaSeletiva from './pages/ColetaSeletiva/ColetaSeletiva';
 import SepararLixo from './pages/Lixo/Lixo';
 import Dashboard from './pages/Dashboard/dashboard';
+import RecuperarSenha from './pages/RecuperarSenha/RecuperarSenha'
+import './assets/styles/variables.css'
 
 
 function App() {
@@ -22,10 +24,11 @@ function App() {
             <Route element={<LayoutHeader/>}>
               <Route path='/coletaSeletiva' element={<ColetaSeletiva />}/>
               <Route path='/PorQueFazer' element={<PorQueFazer />}/>
-              <Route path="//CoresDeColeta" element={<CoresDeColeta />} />
+              <Route path="/CoresDeColeta" element={<CoresDeColeta />} />
               <Route path="/separarlixo" element={<SepararLixo />} />
               <Route path="/jogo" element={<Jogo />} />
               <Route path="/login" element={<Login />} />
+              <Route path='/recuperarSenha' element={<RecuperarSenha />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/dashboard" element={<Dashboard />} />
             </Route>

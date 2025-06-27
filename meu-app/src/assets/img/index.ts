@@ -12,6 +12,9 @@ import imagem5 from './imagem5.png';
 import imagem6 from './imagem6.png';
 import logoRecicla from './recicla-maranhao.png';
 import dashimg from './dash-img.png';
+import esqueceuSenha from './esqueceuSenha.png';
+import mascoteDeEsqueceuSenha from './mascote-de-esqueceuSenha.png'
+import imagemErro from './image-erro.png'
 
 export const imagens = {
     mascote: mascote,
@@ -28,4 +31,7 @@ export const imagens = {
     imagem6: imagem6,
     logoRecicla: logoRecicla,
     dashimg: dashimg,
+    esqueceuSenha: esqueceuSenha,
+    mascoteDeEsqueceuSenha: mascoteDeEsqueceuSenha,
+    imgemErro: imagemErro,
 };

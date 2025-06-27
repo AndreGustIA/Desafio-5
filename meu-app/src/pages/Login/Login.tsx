@@ -63,7 +63,7 @@ const Login = () => {
                      {error && <p className="error-message">{error}</p>}
 
                     <div className="esqueci-senha">
-                        <a href="#">Esqueceu a senha?</a>
+                        <Link to='/recuperarSenha'>Esqueceu a senha?</Link>
                     </div>
 
                     <Botao type="submit" className="login-button">
