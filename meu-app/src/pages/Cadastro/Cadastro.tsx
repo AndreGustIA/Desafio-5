@@ -1,3 +1,4 @@
+import { cadastrar } from '../../services/auth';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { imagens } from "../../assets/img";
@@ -50,22 +51,34 @@ const Cadastro = () => {
         return novosErros;
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const errosValidados = validar();
-        if (Object.keys(errosValidados).length === 0) {
-            console.log('Formulário válido:', formData);
-             alert('Cadastro realizado com sucesso! Clique em OK e faça login.');
-             setErros({});
+    const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const errosValidados = validar();
 
-             setTimeout(() => {
-                navigate('/');
-                }, 100);
+    if (Object.keys(errosValidados).length === 0) {
+        const nomeCompleto = `${formData.nome} ${formData.sobrenome}`;
 
-        } else {
-            setErros(errosValidados);
+        try {
+        await cadastrar({
+            nome: nomeCompleto,
+            email: formData.email,
+            senha: formData.senha,
+        });
+
+        alert("Cadastro realizado com sucesso! Clique em OK e faça login.");
+        setErros({});
+        setTimeout(() => {
+            navigate('/Login');
+        }, 100);
+
+        } catch (error) {
+        setErros({ email: "Erro ao cadastrar. Tente novamente." });
         }
-    };
+
+    } else {
+        setErros(errosValidados);
+    }
+};
 
     return (
         <>

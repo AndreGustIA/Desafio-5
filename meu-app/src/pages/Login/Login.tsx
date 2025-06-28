@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { login } from "../../services/auth";
+import { Link, useNavigate} from 'react-router-dom';
 import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
 import { imagens } from '../../assets/img';
@@ -11,23 +12,30 @@ const Login = () => {
     const [senha, setSenha] = useState("");
     const [error, setError] = useState("");
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const navigate = useNavigate(); 
 
-        if (!email || !senha) {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!email || !senha) {
         setError("Preencha todos os campos.");
         return;
-        }
+    }
 
-        if (email !== "usuario@email.com" || senha !== "123456") {
-        setError("Ops! Seu e-mail ou senha estão incorretos."); //esse email e senha são so pra testar se o erro ta aparecendo
-        return;
-        }
+    try {
+        const resultado = await login({ email, senha });
+        console.log("Usuário logado:", resultado);
 
-        setError(""); 
+        setError("");
         alert("Login realizado com sucesso!");
-        
+       navigate("//https://www.google.com/"); //aqui é pra direcionar pro jogo
+       //enqaunto não tem link do jogo vai um link qualquer
+
+    } catch (error) {
+        setError("Ops! Seu e-mail ou senha estão incorretos.");
+    }
     };
+
     return (
 
         <div className="login-container">
