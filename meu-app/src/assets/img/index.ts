@@ -13,8 +13,9 @@ import imagem6 from './imagem6.png';
 import logoRecicla from './recicla-maranhao.png';
 import dashimg from './dash-img.png';
 import esqueceuSenha from './esqueceuSenha.png';
-import mascoteDeEsqueceuSenha from './mascote-de-esqueceuSenha.png'
-import imagemErro from './image-erro.png'
+import mascoteDeEsqueceuSenha from './mascote-de-esqueceuSenha.png';
+import imagemErro from './image-erro.png';
+import setaEsquerda from './seta-esquerda.png'
 
 export const imagens = {
     mascote: mascote,
@@ -34,4 +35,5 @@ export const imagens = {
     esqueceuSenha: esqueceuSenha,
     mascoteDeEsqueceuSenha: mascoteDeEsqueceuSenha,
     imgemErro: imagemErro,
+    setaEsquerda: setaEsquerda,
 };

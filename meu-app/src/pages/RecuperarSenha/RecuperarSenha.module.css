@@ -96,6 +96,25 @@ h3 {
     color: #DC0D0D;
 }
 
+.setaVoltar {
+    margin-left: calc(50% - 165px) ;
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+}
+
+.iconeSeta {
+    width: 24px; 
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.iconeSeta:hover {
+    transform: scale(1.1); 
+}
+
+
 @media (max-width: 500px) {
     .container {
         padding: 40px;

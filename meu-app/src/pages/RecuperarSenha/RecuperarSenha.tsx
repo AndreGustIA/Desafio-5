@@ -3,10 +3,13 @@ import { useState } from "react";
 import styleRecuperar from './RecuperarSenha.module.css'
 import { imagens } from '../../assets/img';
 import Botao from "../../components/Botao/Botao";
+import { useNavigate } from "react-router-dom";
+
 
 const RecuperarSenha = () => {
     const [email, setEmail] = useState('');
     const [erroemail, setErroEmail] = useState('');
+    const navigate = useNavigate();
 
     const validarEmail = (email: string) => {
         const validacao = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -31,6 +34,10 @@ const RecuperarSenha = () => {
 
     return (
         <> 
+        <div className={styleRecuperar.setaVoltar} onClick={() => navigate(-1)}>
+            <img src={imagens.setaEsquerda} alt="Voltar" className={styleRecuperar.iconeSeta} />
+            </div>
+
             <div className={styleRecuperar.container}>
                 <form className={styleRecuperar.formulario} onSubmit={submit}>
                     <h3> 
