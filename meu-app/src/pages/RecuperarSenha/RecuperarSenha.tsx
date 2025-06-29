@@ -67,7 +67,7 @@ const RecuperarSenha = () => {
                         {'Enviar'}
                     </Botao>
                 </form>
-                <img src={imagens.mascoteDeEsqueceuSenha} alt="Imagem do mascote de esqueceu senha" />
+                <img src={imagens.mascoteDeEsqueceuSenha} className={styleRecuperar.imagemMascote} alt="Imagem do mascote de esqueceu senha" />
             </div>
         </>
     )

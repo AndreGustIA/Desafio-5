@@ -15,6 +15,7 @@
     border-radius: 50px;
     font-family: var(--font-poppins);
     font-weight: var(--font-weight-medium);
+    background-color: transparent;
 }
 
 .botaoaAcessarPagina:hover {
@@ -24,4 +25,17 @@
 
 .botaoaAcessarPagina:active{
     transform: translateY( 5px );
+}
+
+@media (max-width: 500px) {
+    .imagemInst {
+        margin-top: 110px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .botaoaAcessarPagina {
+        margin-top: 100px;
+        width: 150px;
+    }
 }

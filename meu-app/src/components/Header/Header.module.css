@@ -29,3 +29,21 @@
   text-decoration: underline;
 }
 
+@media (max-width: 1920) {
+    .containerHeader nav a {
+        font-size: 14px;
+    }    
+}
+
+@media (max-width: 1024px ) {
+    .containerHeader nav {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .containerHeader {
+        display: none;
+    }
+}
+

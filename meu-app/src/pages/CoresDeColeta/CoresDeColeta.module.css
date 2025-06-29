@@ -28,10 +28,32 @@ body {
   border-radius: 8px;
 }
 
+
 .descricao {
-  color: #006400;
+  color: #00631C;
   margin-top: 2rem;
-  font-size: 24px !important;
-  font-family: var(--fonte-Inter); 
+  font-family: var(--font-Inter); 
   font-weight: 300;
+  font-size: 30px;
+}
+
+.spanCor {
+  font-weight: var(--font-weight-bold);
+}
+
+
+@media (max-width: 500px) {
+  .imagem3 {
+    width: 300px;
+    height: 400px;
+  }
+
+  .descricao {
+    font-size: 22px
+
+  }
+
+  br {
+    display: none;
+  }
 }

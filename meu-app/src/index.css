@@ -5,6 +5,12 @@
 }
 
 body {
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 0; 
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 0;
+  }
 }

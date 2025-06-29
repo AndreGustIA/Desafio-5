@@ -95,3 +95,18 @@ h3 {
     font-size: 13px;
     color: #DC0D0D;
 }
+
+@media (max-width: 500px) {
+    .container {
+        padding: 40px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .imagemMascote {
+        margin-left: 20px;
+        width: 350px;
+    }
+}

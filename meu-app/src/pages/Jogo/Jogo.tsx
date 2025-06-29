@@ -1,4 +1,4 @@
-import './Jogo.css'; 
+import style from './Jogo.module.css'; 
 import { imagens } from '../../assets/img';
 import { useNavigate } from 'react-router-dom'
 
@@ -7,20 +7,20 @@ const Jogo = () => {
 
     return (
         
-          <main className="conteudo-principal">
-            <div className="imagem">
-            <img src={imagens.imagem5} alt="Imagem" className="imagem5" />
+          <main className={style.conteudoPrincipal}>
+            <div className={style.imagem}>
+            <img src={imagens.imagem5} alt="Imagem" className={style.imagem5} />
               
             </div>
             
-            <h1 className="titulo">COMECE AGORA!</h1>
-            <p className="descricao">
-              Clique em <b>"Começar"</b> e<br />
-              embarque nessa jornada divertida<br />
-              de aprendizado sobre o descarte<br />
+            <h1 className={style.titulo}>COMECE AGORA!</h1>
+            <p className={style.descricao}>
+              Clique em <span className={style.span}>"Começar"</span> e
+              embarque<br/> nessa jornada divertida
+              de aprendizado sobre o descarte
               correto de resíduos.
             </p>
-            <button className="botao" onClick={() => navegarPagina('/Login')}>
+            <button className={style.botao} onClick={() => navegarPagina('/Login')}>
               <b>COMEÇAR</b>
             </button>
           </main>

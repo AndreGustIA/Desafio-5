@@ -4,14 +4,14 @@ body {
     background-color: var(--cor-primaria);
 }
 
-.login-container {
+.loginContainer {
   background-color: var(--cor-primaria);
   /* min-height: 100vh; */
   display: flex;
   justify-content: center;
 }
 
-.login-box {
+.loginBox {
   background-color: var(--cor-primaria);
   border-radius: 24px;
   padding: 0px 24px;
@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 
-.top-image {
+.topImage {
   width: 100%;
   height: auto;
   max-height: 160px;
@@ -33,7 +33,7 @@ body {
   z-index: 0;
 }
 
-.login-form {
+.loginForm {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ body {
   margin-top: 20px;
 }
 
-.input-email {
+.inputEmail {
   background-image: url('../../assets/img/email-icon.png');
   background-repeat: no-repeat;
   background-position: 12px center;
@@ -63,7 +63,7 @@ body {
   margin-bottom: 16px;
 }
 
-.input-senha {
+.inputSenha {
   background-image: url('../../assets/img/senha-icon.png');
   background-repeat: no-repeat;
   background-position: 12px center;
@@ -78,7 +78,7 @@ body {
   font-size: 14px;
 }
 
-.esqueci-senha {
+.esqueciSenha {
   width: 100%;
   text-align: right;
   font-size: 12px;
@@ -88,12 +88,12 @@ body {
   font-family: var(--font-poppins);
 }
 
-.esqueci-senha a {
+.esqueciSenha a {
   text-decoration: none;
   color: #00631C;
 }
 
-.login-button {
+.loginButton {
   background-color: #2E7D32;
   color: white;
   padding: 12px;
@@ -114,7 +114,7 @@ body {
   font-family: var(--font-poppins);
 }
 
-.registrar-link {
+.registrarLink {
   color: #2E7D32;
   font-weight: bold;
   margin-bottom: 8px;
@@ -125,32 +125,45 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
   gap: 24px;
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
-.social-icons img {
+.socialIcons img {
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
 
-.error-message {
+.errorMessage {
   margin: 0;
   color: red;
   font-size: 12px;
   text-align: left;
   font-family: 'Inter', sans-serif;
 }
-.input-error {
+.inputError {
   border: 1px solid red !important;
   background-image: url('../../assets/img/image-erro.png'); 
   background-repeat: no-repeat;
   background-position: right 12px center;
   background-size: 20px 20px;
+}
+
+@media (max-width: 800px) {
+    .loginContainer {
+      min-height: 100vh;
+    }
+}
+
+@media (max-width: 500px) {
+  .mascote {
+    width: 350px;
+  }
+  
 }
 
 

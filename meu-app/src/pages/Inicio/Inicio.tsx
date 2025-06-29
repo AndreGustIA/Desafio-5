@@ -11,7 +11,7 @@ const Inicio = () => {
          
           <main className={sytleInicio.conteudoPrincipal}>
             <div className={sytleInicio.imagemLogo}>
-            <img src={imagens.logoRecicla} alt="Imagem" className="imagem-inst" />
+            <img src={imagens.logoRecicla} alt="Imagem" className={sytleInicio.imagemInst} />
             </div>
 
             <Botao className={sytleInicio.botaoaAcessarPagina} onClick={() => navegarPagina('/ColetaSeletiva')}>

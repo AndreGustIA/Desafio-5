@@ -1,16 +1,16 @@
-import './PorQueFazer.css'; 
+import style from'./PorQueFazer.module.css'; 
 import { imagens } from '../../assets/img';
 
 const PorQueFazer = () => {
   return (
-    <div className="container">
-      <div className="illustration">
-        <img src={imagens.imagem2} alt="Imagem" className="imagem2" />
+    <div className={style.container}>
+      <div className={style.illustration}>
+        <img src={imagens.imagem2} alt="Imagem" className={style.imagem2} />
       </div>
 
       <h2>POR QUE FAZER?</h2>
 
-        <div className="beneficios">
+        <div className={style.beneficios}>
           <ul>
             <li>Reduz o volume de lixo nos aterros.</li>
             <li>Gera emprego e renda para cooperativas de <br /> reciclagem.</li>

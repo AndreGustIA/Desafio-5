@@ -1,0 +1,10 @@
+.swiper .swiper-slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+:global(.swiper .swiper-pagination-bullet-active){
+    background-color: #00AF32;
+}
+
