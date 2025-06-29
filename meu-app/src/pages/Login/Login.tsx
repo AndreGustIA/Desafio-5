@@ -1,97 +1,91 @@
 import { login } from "../../services/auth";
-import { Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
 import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
-import { imagens } from '../../assets/img';
-import './Login.css';
+import { imagens } from "../../assets/img";
 import { useState } from "react";
+import styles from "./Login.module.css";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const [error, setError] = useState("");
 
-    const [email, setEmail] = useState("");
-    const [senha, setSenha] = useState("");
-    const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-    const navigate = useNavigate(); 
-
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!email || !senha) {
-        setError("Preencha todos os campos.");
-        return;
+      setError("Preencha todos os campos.");
+      return;
     }
 
     try {
-        const resultado = await login({ email, senha });
-        console.log("Usuário logado:", resultado);
+      const resultado = await login({ email, senha });
+      console.log("Usuário logado:", resultado);
 
-        setError("");
-        alert("Login realizado com sucesso!");
-       navigate("//https://www.google.com/"); //aqui é pra direcionar pro jogo
-       //enqaunto não tem link do jogo vai um link qualquer
-
+      setError("");
+      alert("Login realizado com sucesso!");
+      navigate("https://www.google.com/"); // substitua depois pelo link do jogo
     } catch (error) {
-        setError("Ops! Seu e-mail ou senha estão incorretos.");
+      setError("Ops! Seu e-mail ou senha estão incorretos.");
     }
-    };
+  };
 
-    return (
+  return (
+    <div className={styles.loginContainer}>
+      <div className={styles.loginBox}>
+        <img src={imagens.mascote} alt="Mascote reciclável" className={styles.mascote} />
 
-        <div className="login-container">
-            <div className="login-box">
-                <img src={imagens.mascote} alt="Mascote reciclável" className="mascote" />
+        <form className={styles.loginForm} onSubmit={handleSubmit}>
+          <Input
+            name="usuario"
+            id="usuario"
+            label=""
+            placeholder="Digite seu e-mail aqui"
+            type="text"
+            className={`${styles.inputEmail} ${error ? styles.inputError : ""}`}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-                <form className="login-form" onSubmit={handleSubmit}>
-                    <Input
-                        name="usuario"
-                        id="usuario"
-                        label=""
-                        placeholder="Digite seu e-mail aqui"
-                        type="text"
-                        className= {`input-email ${error ? "input-error" : ""}`}
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-    
-                        
-                    />
+          <Input
+            name="senha"
+            id="senha"
+            label=""
+            placeholder="Senha"
+            type="password"
+            className={`${styles.inputSenha} ${error ? styles.inputError : ""}`}
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+          />
 
-                    <Input
-                        name="senha"
-                        id="senha"
-                        label=""
-                        placeholder="Senha"
-                        type="password"
-                        className={`input-senha ${error ? "input-error" : ""}`}
-                        value={senha}
-                        onChange={(e) => setSenha(e.target.value)}
-                      
-                    />
+          {error && <p className={styles.errorMessage}>{error}</p>}
 
-                     {error && <p className="error-message">{error}</p>}
+          <div className={styles.esqueciSenha}>
+            <Link to="/recuperarSenha">Esqueceu a senha?</Link>
+          </div>
 
-                    <div className="esqueci-senha">
-                        <Link to='/recuperarSenha'>Esqueceu a senha?</Link>
-                    </div>
+          <Botao type="submit" className={styles.loginButton}>
+            Conecte-se
+          </Botao>
+        </form>
 
-                    <Botao type="submit" className="login-button">
-                        Conecte-se
-                    </Botao>
-                </form>
+        <div className={styles.divider}>ou</div>
+        <Link to="/cadastro" className={styles.registrarLink}>
+          Cadastre-se agora
+        </Link>
+        <div className={styles.divider}>ou</div>
 
-                <div className="divider">ou</div>
-                <Link to="/cadastro" className="registrar-link">Cadastre-se agora</Link>
-                <div className="divider">ou</div>
-
-                <div className="social-icons">
-                    <img src={imagens.iconeGoogle} alt="Google" />
-                    <img src={imagens.iconeFacebook} alt="Facebook" />
-                    <img src={imagens.iconeInstagram} alt="Instagram" />
-                </div>
-            </div>
+        <div className={styles.socialIcons}>
+          <img src={imagens.iconeGoogle} alt="Google" />
+          <img src={imagens.iconeFacebook} alt="Facebook" />
+          <img src={imagens.iconeInstagram} alt="Instagram" />
         </div>
-        
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Login;

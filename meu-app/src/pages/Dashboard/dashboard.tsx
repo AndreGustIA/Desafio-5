@@ -1,29 +1,29 @@
-import './dashboard.css'; 
+import styles from './Dashboard.module.css'; 
 import { imagens } from '../../assets/img';
 
 const Dashboard = () => {
+  return (
+    <main className={styles.conteudoPrincipal}>
+      <div className={styles.imagem}>
+        <img src={imagens.dashimg} alt="Imagem" className={styles.imagem5} />
+      </div>
 
-    return (
-        
-          <main className="conteudo-principal">
-            <div className="imagem">
-            <img src={imagens.dashimg} alt="Imagem" className="imagem5" />
-              
-            </div>
-            
-            <h1 className="titulo">Tudo pronto!</h1>
-            <p className="descricao">
-               Você está a um clique de acessar seu painel principal e explorar todas as funcionalidades. Clique abaixo para começar!
-            </p>
-           <button className="botao" onClick={() => {
-              window.location.href = 'https://chatgpt.com/'; //só por enquanto que não tem link da dash
-            }}
->
-              <b>IR PARA O DASHBOARD</b>
-            </button>
-          </main>
+      <h1 className={styles.titulo}>Tudo pronto!</h1>
 
-      );
-    };
-    
-    export default Dashboard;
+      <p className={styles.descricao}>
+        Você está a um clique de acessar seu painel principal e explorar todas as funcionalidades. Clique abaixo para começar!
+      </p>
+
+      <button
+        className={styles.botao}
+        onClick={() => {
+          window.location.href = 'https://chatgpt.com/'; // substitua depois pelo link da dashboard real
+        }}
+      >
+        <b>IR PARA O DASHBOARD</b>
+      </button>
+    </main>
+  );
+};
+
+export default Dashboard;
