@@ -1,5 +1,5 @@
 import { login } from "../../services/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 import Botao from "../../components/Botao/Botao";
 import Input from "../../components/Input/Input";
 import { imagens } from "../../assets/img";
@@ -10,8 +10,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [error, setError] = useState("");
-
-  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -27,7 +25,8 @@ const Login = () => {
 
       setError("");
       alert("Login realizado com sucesso!");
-      navigate("https://www.google.com/"); // substitua depois pelo link do jogo
+      window.open("https://kaio-andrade-da-silva.itch.io/recicla-maranhao", "_blank");
+
     } catch (error) {
       setError("Ops! Seu e-mail ou senha estão incorretos.");
     }

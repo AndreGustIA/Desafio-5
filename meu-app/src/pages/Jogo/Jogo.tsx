@@ -18,8 +18,11 @@ const Jogo = () => {
               Clique em <span className={style.span}>"Começar"</span> e
               embarque<br/> nessa jornada divertida
               de aprendizado sobre o descarte
-              correto de resíduos.
+              correto de resíduos. 
             </p>
+
+            <p>Disponível apenas para Desktop</p>
+
             <button className={style.botao} onClick={() => navegarPagina('/Login')}>
               <b>COMEÇAR</b>
             </button>
