@@ -17,7 +17,8 @@ const Dashboard = () => {
       <button
         className={styles.botao}
         onClick={() => {
-          window.location.href = 'https://chatgpt.com/'; // substitua depois pelo link da dashboard real
+          window.location.href = 'https://app.powerbi.com/view?r=eyJrIjoiNWE4YzY2NTgtOTA2ZS00MjE3LTk1NjktMGIxNGE0YjIyZDQyIiwidCI6IjlkYzI4NTJhLTU0MDItNDcxZC1hMDA5LTk3ZTIyNjYwNzBkOSJ9'
+
         }}
       >
         <b>IR PARA O DASHBOARD</b>

@@ -29,7 +29,7 @@
   }
   
   .descricao {
-    font-size: 31px;
+    font-size: 1,7rem;
     line-height: 1.6;
     color: rgb(21, 110, 21);
     font-family: var(--font-Inter); 
