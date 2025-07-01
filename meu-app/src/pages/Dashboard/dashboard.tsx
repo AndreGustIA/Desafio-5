@@ -1,4 +1,4 @@
-import styles from './Dashboard.module.css'; 
+import styles from './dashboard.module.css'; 
 import { imagens } from '../../assets/img';
 
 const Dashboard = () => {
