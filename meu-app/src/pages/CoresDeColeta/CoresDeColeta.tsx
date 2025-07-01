@@ -11,7 +11,7 @@ const CoresDeColeta = () => {
       </div>
 
       <p className={styles.descricao}>
-        Cada <span className={styles.spanCor}>cor</span> representa um tipo de resíduo,<br />
+        Cada <span className={styles.spanCor}>cor</span> representa um tipo de resíduo, <br />
         facilitando a separação e a reciclagem do lixo.
         Ajuda o meio ambiente e organiza o descarte correto!
       </p>

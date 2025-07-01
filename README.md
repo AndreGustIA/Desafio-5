@@ -5,18 +5,44 @@ Este projeto foi desenvolvido como parte do Desafio 5 do <b>`Programa Trilhas In
 <hr>
 
 ### 💻 Descrição do Projeto
-
+A Equipe desenvolveu, ao longo de junho de 2025, o projeto “Recicla Maranhão”, uma solução tecnológica composta por um jogo educativo sobre coleta seletiva, um site com sistema de login e ranking e um dashboard interativo com dados reais sobre o panorama de resíduos no estado. A proposta nasceu com o nome provisório de “Descarte Certo” e foi sendo aprimorada conforme a integração entre trilhas, mentorias e testes de usabilidade, até chegar à sua versão final de "Recicla Maranhão", dando mais representatividade ao estado desde o nome.
 <hr>
 
 ### ✅ Funcionalidades
+
+### 🔐 Autenticação de Usuário
+- Cadastro com nome, sobrenome, e-mail e senha (validação de campos)
+- Login com validação e feedback de erros
+- Página de recuperação de senha (validação de e-mail)
+- Integração com API REST (cadastro e login)
+
+### 🧭 Navegação
+- Navegação entre páginas educativas:
+  - O que é coleta seletiva?
+  - Por que fazer?
+  - As cores da coleta
+  - Como separar o lixo?
+- Header com links no desktop
+- Swiper (carrossel de páginas) na versão mobile
+
+### 🕹️ Integração com Jogo
+- Redirecionamento para o jogo educativo hospedado no [Itch.io](https://kaio-andrade-da-silva.itch.io/recicla-maranhao)
+
+### 📊 Dashboard
+- Página com botão para acessar o painel do usuário
+
+### ✅ Validação e Feedback
+- Campos obrigatórios e validação de formato
+- Feedback visual com bordas vermelhas e mensagens de erro
+- Alertas de sucesso com redirecionamento
 
 <hr>
 
 ### 🔗 Links
 
-### 💻 [Link do Site]()
+### 💻 [Link do Site](https://reciclamaranhao.vercel.app/)
 
-### 🎨 [Link do figma]()
+### 🎨 [Link do figma](https://www.figma.com/design/9lzAOqeeeohhgGB4kZV92q?node-id=0-1)
 <hr>
 
 ### ⚙️ Instalação e Execução

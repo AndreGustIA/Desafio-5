@@ -21,7 +21,7 @@ const Jogo = () => {
               correto de resíduos. 
             </p>
 
-            <p>Disponível apenas para Desktop</p>
+            <p>Disponível apenas para Desktop!</p>
 
             <button className={style.botao} onClick={() => navegarPagina('/Login')}>
               <b>COMEÇAR</b>
