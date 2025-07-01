@@ -26,10 +26,10 @@ function App() {
               <Route path='/PorQueFazer' element={<PorQueFazer />}/>
               <Route path="/CoresDeColeta" element={<CoresDeColeta />} />
               <Route path="/separarlixo" element={<SepararLixo />} />
-              <Route path="/jogo" element={<Jogo />} />
-              <Route path="/login" element={<Login />} />
-              <Route path='/recuperarSenha' element={<RecuperarSenha />} />
-              <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/Jogo" element={<Jogo />} />
+              <Route path="/Login" element={<Login />} />
+              <Route path='/RecuperarSenha' element={<RecuperarSenha />} />
+              <Route path="/Cadastro" element={<Cadastro />} />
               <Route path="/dashboard" element={<Dashboard />} />
             </Route>
           </Routes>  

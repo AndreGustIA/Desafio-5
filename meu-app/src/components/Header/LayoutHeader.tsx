@@ -17,12 +17,12 @@ import Dashboard from "../../pages/Dashboard/dashboard";
 import Login from "../../pages/Login/Login";
 
 const pages =  [
-  { path: "/coletaSeletiva", label: "Coleta Seletiva", component: <ColetaSeletiva /> },
+  { path: "/ColetaSeletiva", label: "Coleta Seletiva", component: <ColetaSeletiva /> },
   { path: "/PorQueFazer", label: "Por Que Fazer", component: <PorQueFazer /> },
   { path: "/CoresDeColeta", label: "Cores de Coleta", component: <CoresDeColeta />},
   { path: "/separarlixo", label: "Separar Lixo", component: <SepararLixo /> },
-  { path: "/jogo", label: "Jogo", component: <Jogo /> },
-  { path: "/login", label: "Login", component: <Login /> },
+  { path: "/Jogo", label: "Jogo", component: <Jogo /> },
+  { path: "/Login", label: "Login", component: <Login /> },
   { path: "/dashboard", label: "Dashboard", component: <Dashboard /> }
 ];
 
